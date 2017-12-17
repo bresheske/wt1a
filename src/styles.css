@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+a {
+    color: inherit !important;
+}
+
+.header {
+    text-shadow: 3px 3px 18px #000;
+}
+
+.full {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.t1 {
+    opacity: .1;
+}
+.t2 {
+    opacity: .2;
+}
+.t3 {
+    opacity: .3;
+}
+.t4 {
+    opacity: .4;
+}
+.t5 {
+    opacity: .5;
+}
+.t6 {
+    opacity: .6;
+}
+.t7 {
+    opacity: .7;
+}
+.t8 {
+    opacity: .8;
+}
+.t9 {
+    opacity: .9;
+}
+.t10 {
+    opacity: 1;
+}

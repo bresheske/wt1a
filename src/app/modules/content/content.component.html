@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col m3 s12">
+    <h1 class="center"><a routerLink="/">WT1A</a></h1>
+    <ul class="collection">
+      <li class="collection-item teal lighten-4">Home</li>
+      <li class="collection-item" routerLink="/content/home" routerLinkActive="active">News</li>
+      <li class="collection-item" routerLink="/content/about" routerLinkActive="active">About Us</li>
+      <li class="collection-item" routerLink="/content/bylaws" routerLinkActive="active">By-Laws</li>
+      <li class="collection-item" routerLink="/content/committee" routerLinkActive="active">Executive Committee</li>
+      <li class="collection-item" routerLink="/content/history" routerLinkActive="active">History</li>
+      <li class="collection-item" routerLink="/content/minutes" routerLinkActive="active">Meeting Minutes</li>
+      <li class="collection-item" routerLink="/content/membership" routerLinkActive="active">Membership</li>
+
+      <li class="collection-item teal lighten-4">Awards</li>
+      <li class="collection-item" routerLink="/content/administrator-award" routerLinkActive="active">Administrator Award</li>
+    </ul>
+  </div>
+
+  <div class="col m9 s12 content-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

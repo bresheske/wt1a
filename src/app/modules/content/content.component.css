@@ -1,0 +1,8 @@
+.collection li[routerLink] {
+    cursor: pointer;
+}
+
+.content-container ::ng-deep li {
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+}
