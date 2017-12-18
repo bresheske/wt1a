@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Reveal } from '../../static/reveal';
 declare let $:any;
 
 @Component({
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
     $(() => {
       $('.parallax').parallax();
     });
+    Reveal.reveal('.home-wrapper > *')
   }
 
 }

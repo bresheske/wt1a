@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Reveal } from '../../static/reveal';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+    Reveal.reveal('.collection-item');
   }
 
 }
