@@ -1,4 +1,5 @@
-.collection li[routerLink] {
+.collection li[routerLink],
+.collection li.menu-icon {
     cursor: pointer;
 }
 

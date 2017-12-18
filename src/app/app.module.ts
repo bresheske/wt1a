@@ -12,6 +12,7 @@ import { CommitteeComponent } from './pages/committee/committee.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { MinutesComponent } from './pages/minutes/minutes.component';
 import { MembershipComponent } from './pages/membership/membership.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
       { path: 'history', component: HistoryComponent },
       { path: 'minutes', component: MinutesComponent },
       { path: 'membership', component: MembershipComponent },
+      { path: 'contact', component: ContactComponent },
     ]
   },
   { path: '**', component: HomeComponent }
@@ -42,7 +44,8 @@ const routes: Routes = [
     CommitteeComponent,
     HistoryComponent,
     MinutesComponent,
-    MembershipComponent
+    MembershipComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

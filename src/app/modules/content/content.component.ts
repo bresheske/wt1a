@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Reveal } from '../../static/reveal';
+import { Router } from '@angular/router';
+import { NavigationStart } from '@angular/router/src/events';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,25 @@ import { Reveal } from '../../static/reveal';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
+  public HIDE:string = "hide-on-small-only";
+  public SHOW:string = "";
 
-  constructor() {
+  public hideClass:string = this.HIDE;
 
+  constructor(router:Router) {
+    router.events.subscribe((event) => {
+      this.hideMenu();
+    });
+  }
+
+  public hideMenu() {
+    this.hideClass = this.HIDE;
+  }
+
+  public toggleMenu() {
+    this.hideClass = (this.hideClass == this.HIDE)
+      ? this.SHOW
+      : this.HIDE;
   }
 
   ngOnInit() {
