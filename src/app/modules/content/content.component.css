@@ -7,3 +7,9 @@
     list-style-type: disc !important;
     list-style-position: inside !important;
 }
+
+@media print {
+    .nav-container {
+        display: none;
+    }
+}

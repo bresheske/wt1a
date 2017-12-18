@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Reveal } from '../../static/reveal';
 import { Router } from '@angular/router';
-import { NavigationStart } from '@angular/router/src/events';
 
 @Component({
   selector: 'app-content',

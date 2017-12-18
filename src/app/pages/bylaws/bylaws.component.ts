@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Reveal } from '../../static/reveal';
 
 @Component({
   selector: 'app-bylaws',
@@ -10,6 +11,7 @@ export class BylawsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    Reveal.reveal('.laws-wrapper > *');
   }
 
 }
