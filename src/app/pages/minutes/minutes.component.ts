@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Reveal } from '../../static/reveal';
 
 @Component({
   selector: 'app-minutes',
@@ -10,6 +11,7 @@ export class MinutesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    Reveal.reveal('.minutes-wrapper > *');
   }
 
 }

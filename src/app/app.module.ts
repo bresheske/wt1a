@@ -13,6 +13,9 @@ import { HistoryComponent } from './pages/history/history.component';
 import { MinutesComponent } from './pages/minutes/minutes.component';
 import { MembershipComponent } from './pages/membership/membership.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AdministratorAwardComponent } from './pages/administrator-award/administrator-award.component';
+import { InnovativeGrantAwardComponent } from './pages/innovative-grant-award/innovative-grant-award.component';
+import { OutstandingServiceAwardComponent } from './pages/outstanding-service-award/outstanding-service-award.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,6 +31,9 @@ const routes: Routes = [
       { path: 'minutes', component: MinutesComponent },
       { path: 'membership', component: MembershipComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'administrator-award', component: AdministratorAwardComponent },
+      { path: 'innovative-grant-award', component: InnovativeGrantAwardComponent },
+      { path: 'outstanding-service-award', component: OutstandingServiceAwardComponent },
     ]
   },
   { path: '**', component: HomeComponent }
@@ -45,7 +51,10 @@ const routes: Routes = [
     HistoryComponent,
     MinutesComponent,
     MembershipComponent,
-    ContactComponent
+    ContactComponent,
+    AdministratorAwardComponent,
+    InnovativeGrantAwardComponent,
+    OutstandingServiceAwardComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
