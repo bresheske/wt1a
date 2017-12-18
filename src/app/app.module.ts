@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AdministratorAwardComponent } from './pages/administrator-award/administrator-award.component';
 import { InnovativeGrantAwardComponent } from './pages/innovative-grant-award/innovative-grant-award.component';
 import { OutstandingServiceAwardComponent } from './pages/outstanding-service-award/outstanding-service-award.component';
+import { ScholarshipComponent } from './pages/scholarship/scholarship.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
       { path: 'administrator-award', component: AdministratorAwardComponent },
       { path: 'innovative-grant-award', component: InnovativeGrantAwardComponent },
       { path: 'outstanding-service-award', component: OutstandingServiceAwardComponent },
+      { path: 'scholarship', component: ScholarshipComponent },
     ]
   },
   { path: '**', component: HomeComponent }
@@ -54,7 +56,8 @@ const routes: Routes = [
     ContactComponent,
     AdministratorAwardComponent,
     InnovativeGrantAwardComponent,
-    OutstandingServiceAwardComponent
+    OutstandingServiceAwardComponent,
+    ScholarshipComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
